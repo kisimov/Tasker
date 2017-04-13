@@ -14,7 +14,30 @@
  *= require_self
  */
  
-body {font-size: 1.75em}
+body {
+	font-size: 1.75em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	background-color: #d2d2d2;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid #5a5a5a;
+    margin: 2em 0;
+    padding: 0; 
+}
+
+h1 {
+	text-align:center;
+}
+
 
 .buffer-top {
 	margin-top:2em;
@@ -31,13 +54,24 @@ body {font-size: 1.75em}
 	}
 }
 
-.priority_1 {color: #009090}
-.priority_2 {color: #c09000}
-.priority_3 {color: #c00000}
-.completed_true .title {color: #c0c0c0; text-decoration: line-through;}
+.priority_1 {
+	color: #00ba3c
+}
+.priority_2 {
+	color: #fff400
+}
+.priority_3 {
+	color: #D43927
+}
+.completed_true .title {
+	color: #949191;
+	text-decoration: line-through;
+}
 
 .done {
 	margin-left: 10px;
 }
 
-.completed_true .done {display: none}
+.completed_true .done {
+	display: none
+}
